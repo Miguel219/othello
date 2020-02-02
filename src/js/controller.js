@@ -239,14 +239,17 @@ const render = (mount,state) => {
     //Se crea el titulo de la pagina
     const titulo = document.createElement('H2');
     titulo.textContent = 'OTHELLO';
+    titulo.style.fontFamily = 'Cursive';
 
     //Se crea el marcador del juego
     const marcador = document.createElement('p');
     marcador.textContent = 'Negros '+ negros + ' - '+ blancos + ' Blancos';
+    marcador.style.fontFamily = 'Cursive';
 
     //Se crea el turno del juego
     const turno = document.createElement('p');
     turno.textContent = (turn === 1) ? 'Es turno del jugador de fichas negras' : 'Es turno del jugador de fichas blancas';
+    turno.style.fontFamily = 'Cursive';
     
     //Se modifica el mount
     mount.style.alignItems = 'center';
